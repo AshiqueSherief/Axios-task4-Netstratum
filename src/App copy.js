@@ -29,11 +29,10 @@ function App() {
       <Router>
 
         <div className="nav">
-          {isAuthenticated &&
-            <nav>
-              <Link to="/home">Home</Link>
-              <Link to="/about">about me</Link>
-            </nav>}
+          {isAuthenticated && <nav>
+            <Link to="/home">Home</Link>
+            <Link to="/about">about me</Link>
+          </nav>}
         </div>
 
         <Switch>

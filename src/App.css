@@ -1,38 +1,110 @@
-.App {
+.container {
+  height: 100vh;
+  width: 100vw;
   text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    black 15%,
+    #000205cc 75%,
+    rgba(255, 255, 255, 0.336)
+  );
+  z-index: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container__log {
+  width: 240px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container__box {
+  width: 396px;
+  height: 298px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container__box--title {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 60px;
+  padding: 20px;
+}
+.container__box--input {
+  height: 22px;
+  padding: 10px;
+  margin-top: 15px;
+  width: 85%;
+}
+
+.container__box--input:focus {
+  outline: none;
+}
+.container__box--button {
+  height: 45px;
+  margin-top: 20px;
+  background-color: #000205;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  width: 363px;
+}
+.container__box--button:focus {
+  outline: none;
+}
+.container__box--titles {
+  font-size: 12px;
+}
+.links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* margin-top: 5px; */
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.nav {
+  padding-top: 20px;
+  background-color: #000205f3;
+  height: 1cm;
+}
+.login_title {
+  margin-top: 40px;
+  padding-top: 5px;
+  font-size: 0.6cm;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  font-family: sans-serif;
+}
+th,
+td {
+  padding: 0.25em 0.5em;
+  text-align: left;
+}
+td:nth-child(2) {
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+td {
+  background-color: #eee;
+}
+th {
+  background-color: #009;
+  color: #fff;
+}
+
+.zigzag {
+  border-collapse: separate;
+  border-spacing: 0.25em 1em;
+}
+tbody tr:nth-child(odd) {
+  transform: rotate(2deg);
+}
+thead tr,
+tbody tr:nth-child(even) {
+  transform: rotate(-2deg);
 }
