@@ -58,6 +58,7 @@
 
 import Axios from "axios";
 import { useEffect, useState } from "react";
+import Nav from "./Nav";
 //library for router
 
 function Home() {
@@ -74,6 +75,7 @@ function Home() {
 
   return (
     <div className="App">
+      <Nav />
       {l ? (
         <table className=".table">
           <tr className="tr">

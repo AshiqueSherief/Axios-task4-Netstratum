@@ -1,19 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import Nav from "./Nav";
 
 function Start() {
   return (
-    /*1*/ <div className="container6">
+    <div className="container6">
+      <Nav />
       <div className="floatleft">
         <img className="wel" src="/welcome.png" alt="welcome"></img>
-        <div className="nav">
-          {/* <nav className="topnav">
-            <Link to="/login">Login</Link>
-            <Link to="/profile">Profile</Link>
-            <Link to="/home">Details</Link>
-            <br></br>
-          </nav> */}
-        </div>
+
+        <div className="nav"></div>
       </div>
     </div>
   );
