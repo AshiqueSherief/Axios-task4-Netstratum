@@ -19,7 +19,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 // aut0 end
 
 function App() {
-  c
+
   const { isAuthenticated } = useAuth0();
   return (
     <div className="div_main">
