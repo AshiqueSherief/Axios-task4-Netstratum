@@ -3,10 +3,12 @@ import {
   BrowserRouter as Router,
   Routes as Switch,
   Route,
-  Link,
+  Link
 } from "react-router-dom";
 import Login from "./Component/Login";
 import Home from "./Component/Home";
+import About from "./Component/About";
+import Start from "./Component/Start";
 // import { useState } from "react";
 
 // auth0
@@ -14,13 +16,11 @@ import Home from "./Component/Home";
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 
-
-
-
-// aut0 ends
+// aut0 end
 
 function App() {
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  c
+  const { isAuthenticated } = useAuth0();
   return (
     <div className="div_main">
 
@@ -29,20 +29,19 @@ function App() {
       <Router>
 
         <div className="nav">
-          {isAuthenticated &&
-            <nav>
-              <Link to="/home">Home</Link>
-              <Link to="/about">about me</Link>
-            </nav>}
+          <nav className="topnav">
+            <Link to="/login">Login</Link>
+            <Link to="/profile">Profile</Link>
+            <Link to="/home">Details</Link>
+            <br></br>
+          </nav>
         </div>
-
         <Switch>
-          <Route path="/" element={isAuthenticated ? <Home /> : <Login />}></Route>
+          <Route path="/" element={isAuthenticated ? <About /> : <Start />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/profile" element={<About />}></Route>
           <Route path="/home" element={<Home />}></Route>
-          <Route path="/about" element="<Me/>"></Route>
-
         </Switch>
-
       </Router>
       {/* Routing ends */}
 
