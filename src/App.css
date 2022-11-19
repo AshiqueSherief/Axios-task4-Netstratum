@@ -5,7 +5,7 @@
   background-image: linear-gradient(
     to bottom,
     black 15%,
-    #000205cc 75%,
+    #000205cc 70%,
     rgba(255, 255, 255, 0.336)
   );
   z-index: 0;
@@ -14,8 +14,14 @@
 .container__log {
   width: 240px;
 }
+.container__log2 {
+  width: 240px;
+  border-radius: 50%;
+  box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+}
 
 .container__box {
+  margin-top: 30px;
   width: 396px;
   height: 298px;
   border-radius: 10px;
@@ -23,6 +29,17 @@
   margin-right: auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   background-color: #fff;
+}
+.container__box2 {
+  margin-top: 30px;
+  width: 396px;
+  height: 298px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #fff;
+  box-shadow: -5px -5px 30px 5px rgb(17, 1, 1), 5px 5px 30px 5px rgb(2, 2, 20);
 }
 
 .container__box--title {
@@ -77,34 +94,88 @@
   font-size: 0.6cm;
 }
 
-table {
-  font-family: sans-serif;
+.table {
+  font-family: "Advent Pro";
+  font-size: 22px;
+  border-radius: 25px;
 }
-th,
-td {
+.td {
   padding: 0.25em 0.5em;
   text-align: left;
-}
-td:nth-child(2) {
-  text-align: right;
+  border-radius: 25px;
 }
 
-td {
+.td {
   background-color: #eee;
+  height: 2cm;
+  border-radius: 25px;
+  /* transform: rotate(0.3deg); */
 }
-th {
-  background-color: #009;
+.th {
+  background-color: rgba(0, 0, 7, 0.993);
   color: #fff;
+  border-radius: 25px;
+  /* transform: rotate(0.5deg); */
 }
-
+.tr {
+  border-radius: 25px;
+  height: 2cm;
+  border-radius: 25px;
+  /* transform: rotate(0.3deg); */
+}
 .zigzag {
   border-collapse: separate;
   border-spacing: 0.25em 1em;
 }
-tbody tr:nth-child(odd) {
-  transform: rotate(2deg);
+.tr:nth-child(odd) {
+  /* transform: rotate(0.5deg); */
+  background-color: aquamarine;
 }
-thead tr,
-tbody tr:nth-child(even) {
-  transform: rotate(-2deg);
+
+.container2 {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-image: url("/home/ashique/Documents/route/public/themejpeg.png");
+}
+.container3 {
+  padding-top: 100px;
+}
+.container6 {
+  background-color: rgb(61, 60, 60);
+  height: 100vh;
+  width: 100%;
+  float: left;
+}
+.floatleft {
+  background-color: rgb(3, 0, 0);
+  height: 100vh;
+  width: 20%;
+}
+.wel {
+  margin-top: 300px;
+
+  margin-left: 850px;
+}
+
+/* .last {
+  font-family: "Kalam";
+  font-size: 22px;
+} */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
