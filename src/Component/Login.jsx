@@ -38,7 +38,7 @@ function Login() {
     <div>
       {/* input box starts */}
       <div className="container">
-        <img src="/logo.jpg" alt="fb logo" className="container__log" />
+        <img src="/logo.jpg" alt="fb logo" className="container__log_login" />
         <div className="container__box">
           <div className="login_title">
             <p>

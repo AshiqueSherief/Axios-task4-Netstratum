@@ -27,14 +27,14 @@ function App() {
       {/* routing */}
 
       <Router>
-        <div className="nav">
-          {isAuthenticated ? flag = 1 : flag = 0}
+        <div >
+          {isAuthenticated ? flag = true : flag = false}
         </div>
         <Switch>
-          <Route path="/" element={flag === 1 ? <About /> : <Start />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/profile" element={flag === 1 && <About />}></Route>
-          <Route path="/home" element={flag === 1 && <Home />}></Route>
+          <Route path="/" element={flag === true ? <About /> : <Start />}></Route>
+          <Route onClick={<Login />} path="/" element={<Login />}></Route>
+          <Route path="/profile" element={flag === true && <About />}></Route>
+          <Route path="/home" element={flag === true && <Home />}></Route>
 
         </Switch>
       </Router>

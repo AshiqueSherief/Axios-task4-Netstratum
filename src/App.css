@@ -11,13 +11,17 @@
   z-index: 0;
 }
 
+.container__log_login {
+  width: 240px;
+}
 .container__log {
+  position: relative;
+  left: 50%;
   width: 240px;
 }
 .container__log2 {
   width: 240px;
   border-radius: 50%;
-  box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
 }
 
 .container__box {
@@ -40,6 +44,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   background-color: #fff;
   box-shadow: -5px -5px 30px 5px rgb(17, 1, 1), 5px 5px 30px 5px rgb(2, 2, 20);
+  padding-top: 75px;
 }
 
 .container__box--title {
@@ -138,12 +143,18 @@
   text-align: center;
   background-image: url("/home/ashique/Documents/route/public/themejpeg.png");
 }
+.new {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+}
 .container3 {
   padding-top: 100px;
 }
 .container6 {
   background-color: rgb(61, 60, 60);
-  height: 100vh;
+  height: 100%;
   width: 100%;
   float: left;
 }

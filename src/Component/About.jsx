@@ -1,7 +1,6 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import Nav from "./Nav";
-// import Nav from "./Component/Nav";
 
 function About() {
   const { logout, user } = useAuth0();
@@ -11,11 +10,12 @@ function About() {
       <div className="container2">
         <Nav />
         <div className="container3">
-          <img src={user.picture} alt="fb logo" className="container__log2" />
+          <img src={user.picture} alt="fb logo" className="new" />
+
           <div className="container__box2">
             <div className="last">
-              <h2>{user.Name}</h2>
-              <h3>{user.Email}</h3>
+              <h2>{user.name}</h2>
+              <h3>{user.email}</h3>
             </div>
             <button
               type="submit"
